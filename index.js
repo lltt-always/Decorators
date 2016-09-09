@@ -31,7 +31,7 @@ window.onload = () => {
         target.add_attribute = '附加属性：幸运星';
     }
 
-    /*增加飞行技能*/
+    /*增加飞行技能，在Man类上添加canFly方法，可以被继承*/
     function addFly(canFly) {
         return (target) => {
             target.prototype.canFly = () => {
